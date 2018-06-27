@@ -24,7 +24,6 @@ def Scan(path, files, mediaList, subdirs, language=None, root=None):
             continue
 
         tags = TinyTag.get(f)
-        print tags
         plex_track = Media.Track(
             artist          =   utf8(tags.artist),
             album           =   utf8(tags.album),
