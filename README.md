@@ -6,8 +6,8 @@ This script is meant for my own personal use only. It is extremely fragile and n
 # Installation (Linux only)
 Assuming Plex is installed in the default directory `/var/lib/plexmediaserver/` and that it is run by user `plex`, then you may execute
 ```
-cd /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/
-sudo mkdir -p Scanners/Common Scanners/Music
+cd "/var/lib/plexmediaserver/Library/Application Support/Plex Media Server/"
+sudo mkdir -p "Scanners/Common Scanners/Music"
 sudo wget 'https://raw.githubusercontent.com/devsnd/tinytag/master/tinytag/tinytag.py' -o Scanners/Common/tinytag.py
 sudo wget 'https://raw.githubusercontent.com/Aanok/tinytag-scanner/master/TinyTag%20Scanner.py' -o Scanners/Music/TinyTag\ Scanner.py
 sudo chown -R plex:plex Scanners
