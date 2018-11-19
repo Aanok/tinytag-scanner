@@ -14,7 +14,7 @@ supported_containers = [
 
 
 def utf8(string):
-    return string.encode('utf-8') if isinstance(string, str) else None
+    return string.encode('utf-8') if isinstance(string, unicode) else None
 
 
 def Scan(path, files, mediaList, subdirs, language=None, root=None):
